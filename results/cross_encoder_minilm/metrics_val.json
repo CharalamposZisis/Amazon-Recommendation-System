@@ -1,0 +1,131 @@
+{
+  "experiment": "cross_encoder_minilm",
+  "best_epoch": 1,
+  "history": [
+    {
+      "epoch": 0,
+      "val_macro_f1": 0.5335,
+      "seconds": 744
+    },
+    {
+      "epoch": 1,
+      "val_macro_f1": 0.5377,
+      "seconds": 738
+    }
+  ],
+  "predict_seconds": 24.7,
+  "n_rows": 41934,
+  "n_queries": 2089,
+  "ranking": {
+    "ndcg@1": 0.7734,
+    "recall@1": 0.1397,
+    "ndcg@5": 0.7413,
+    "recall@5": 0.4738,
+    "ndcg@10": 0.7754,
+    "recall@10": 0.7271,
+    "mrr": 0.841,
+    "n_queries_ndcg": 2089,
+    "n_queries_with_E": 2089
+  },
+  "ranking_by_source": {
+    "behavioral": {
+      "ndcg@1": 0.837,
+      "recall@1": 0.1086,
+      "ndcg@5": 0.6938,
+      "recall@5": 0.3179,
+      "ndcg@10": 0.6965,
+      "recall@10": 0.4978,
+      "mrr": 0.8891,
+      "n_queries_ndcg": 46,
+      "n_queries_with_E": 46
+    },
+    "negations": {
+      "ndcg@1": 0.7033,
+      "recall@1": 0.1063,
+      "ndcg@5": 0.6834,
+      "recall@5": 0.3676,
+      "ndcg@10": 0.702,
+      "recall@10": 0.5649,
+      "mrr": 0.7956,
+      "n_queries_ndcg": 166,
+      "n_queries_with_E": 166
+    },
+    "nlqec": {
+      "ndcg@1": 0.7778,
+      "recall@1": 0.2565,
+      "ndcg@5": 0.6715,
+      "recall@5": 0.5611,
+      "ndcg@10": 0.7845,
+      "recall@10": 0.9417,
+      "mrr": 0.8472,
+      "n_queries_ndcg": 9,
+      "n_queries_with_E": 9
+    },
+    "other": {
+      "ndcg@1": 0.7713,
+      "recall@1": 0.1492,
+      "ndcg@5": 0.7454,
+      "recall@5": 0.5069,
+      "ndcg@10": 0.7868,
+      "recall@10": 0.7729,
+      "mrr": 0.8385,
+      "n_queries_ndcg": 1703,
+      "n_queries_with_E": 1703
+    },
+    "parse_pattern": {
+      "ndcg@1": 0.8479,
+      "recall@1": 0.0785,
+      "ndcg@5": 0.7739,
+      "recall@5": 0.2779,
+      "ndcg@10": 0.7528,
+      "recall@10": 0.4689,
+      "mrr": 0.8994,
+      "n_queries_ndcg": 165,
+      "n_queries_with_E": 165
+    }
+  },
+  "classification": {
+    "accuracy": 0.5898,
+    "macro_f1": 0.5377,
+    "f1_per_class": {
+      "E": 0.6423,
+      "S": 0.591,
+      "C": 0.4284,
+      "I": 0.489
+    },
+    "confusion_matrix": {
+      "labels": [
+        "E",
+        "S",
+        "C",
+        "I"
+      ],
+      "matrix": [
+        [
+          11456,
+          4903,
+          436,
+          1286
+        ],
+        [
+          4007,
+          9262,
+          185,
+          1300
+        ],
+        [
+          537,
+          302,
+          746,
+          282
+        ],
+        [
+          1591,
+          2123,
+          249,
+          3269
+        ]
+      ]
+    }
+  }
+}

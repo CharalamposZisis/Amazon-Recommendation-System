@@ -1,0 +1,19 @@
+name: cross_encoder_minilm
+model: cross-encoder/ms-marco-MiniLM-L-12-v2
+data_dir: data/processed/esci_small_us
+eval_splits:
+- val
+- test
+seed: 42
+fields:
+- product_title
+- product_brand
+- product_color
+max_length: 128
+batch_size: 32
+eval_batch_size: 256
+lr: 3.0e-05
+epochs: 2
+warmup_ratio: 0.1
+class_weight: null
+train_max_queries: null
