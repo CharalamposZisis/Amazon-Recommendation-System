@@ -1,0 +1,11 @@
+# Dense re-ranking χωρίς εκπαίδευση (src/dense.py) με ισχυρότερο retrieval μοντέλο. GPU/Colab.
+# Το BGE θέλει πρόθεμα στο query (οδηγία του μοντέλου).
+name: dense_bge
+model: BAAI/bge-base-en-v1.5
+query_prefix: "Represent this sentence for searching relevant passages: "
+data_dir: data/processed/esci_small_us
+eval_splits: [val, test]
+seed: 42
+fields: [product_title, product_brand, product_color]
+max_seq_length: 128
+batch_size: 256

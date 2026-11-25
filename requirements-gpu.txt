@@ -1,0 +1,6 @@
+# Πακέτα μόνο για τα πειράματα GPU (Colab). ΔΕΝ χρειάζονται τοπικά.
+# Το Colab έχει ήδη torch και transformers· το notebook εγκαθιστά μόνο ό,τι λείπει.
+-r requirements.txt
+torch
+transformers
+sentence-transformers

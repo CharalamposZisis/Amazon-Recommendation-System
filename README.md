@@ -125,13 +125,24 @@ for c in majority logreg_lexical logreg_lexical_balanced; do
 done
 ```
 
+## Πειράματα σε GPU (Google Colab)
+
+Τα μοντέλα με transformers τρέχουν στο Colab, χωρίς καμία εγκατάσταση τοπικά. Τα πακέτα τους είναι στο `requirements-gpu.txt`.
+- `src/dense.py`: dense re-ranking χωρίς εκπαίδευση, με cosine query–product (`dense_minilm`, `dense_bge`).
+- `src/cross_encoder.py`: fine-tuned cross-encoder για E/S/C/I (`cross_encoder_minilm`). Επιλογή epoch με
+  macro-F1 στο val· ranking score = expected gain.
+
+Ροή: Colab → **File → Upload notebook** → `notebooks/colab_01_dense_cross_encoder.ipynb` → Runtime: **T4 GPU** →
+**Run all**. Το notebook κατεβάζει τον κώδικα (GitHub) και το ESCI, ξαναφτιάχνει τα ίδια splits (με έλεγχο ότι
+βγαίνουν ίδια) και στο τέλος κατεβάζει το `results_colab01.zip` με τα metrics.
+
 Έξοδος ανά πείραμα: `results/<exp>/metrics_{val,test}.json`, `config.yaml` και τα predictions
 (τα predictions δεν μπαίνουν στο git). Τα `*_text` θέλουν ~7GB RAM.
 
 ## Δομή
 
 ```
-src/        κώδικας (data.py, eda.py, meta.py, category_subset.py, evaluate.py, baselines.py, classifiers.py, report.py)
+src/        κώδικας (data.py, eda.py, meta.py, category_subset.py, evaluate.py, baselines.py, classifiers.py, dense.py, cross_encoder.py, report.py)
 configs/    ένα yaml ανά πείραμα
 notebooks/  EDA και παρουσίαση αποτελεσμάτων
 results/    metrics και γραφήματα
