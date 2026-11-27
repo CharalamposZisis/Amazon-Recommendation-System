@@ -1,0 +1,118 @@
+{
+  "experiment": "logreg_lexical",
+  "subset": "configs/subsets/test_q500.json",
+  "n_rows": 10143,
+  "n_queries": 500,
+  "ranking": {
+    "ndcg@1": 0.6236,
+    "recall@1": 0.0975,
+    "ndcg@5": 0.6333,
+    "recall@5": 0.3984,
+    "ndcg@10": 0.688,
+    "recall@10": 0.6581,
+    "mrr": 0.7264,
+    "n_queries_ndcg": 500,
+    "n_queries_with_E": 500
+  },
+  "ranking_by_source": {
+    "behavioral": {
+      "ndcg@1": 0.5286,
+      "recall@1": 0.031,
+      "ndcg@5": 0.5584,
+      "recall@5": 0.1794,
+      "ndcg@10": 0.6058,
+      "recall@10": 0.3857,
+      "mrr": 0.6542,
+      "n_queries_ndcg": 14,
+      "n_queries_with_E": 14
+    },
+    "negations": {
+      "ndcg@1": 0.5237,
+      "recall@1": 0.0922,
+      "ndcg@5": 0.5133,
+      "recall@5": 0.299,
+      "ndcg@10": 0.5595,
+      "recall@10": 0.4873,
+      "mrr": 0.6524,
+      "n_queries_ndcg": 38,
+      "n_queries_with_E": 38
+    },
+    "nlqec": {
+      "ndcg@1": 1.0,
+      "recall@1": 0.1458,
+      "ndcg@5": 0.7718,
+      "recall@5": 0.5625,
+      "ndcg@10": 0.8058,
+      "recall@10": 0.6458,
+      "mrr": 1.0,
+      "n_queries_ndcg": 2,
+      "n_queries_with_E": 2
+    },
+    "other": {
+      "ndcg@1": 0.6103,
+      "recall@1": 0.1028,
+      "ndcg@5": 0.6354,
+      "recall@5": 0.4295,
+      "ndcg@10": 0.6992,
+      "recall@10": 0.7081,
+      "mrr": 0.7166,
+      "n_queries_ndcg": 405,
+      "n_queries_with_E": 405
+    },
+    "parse_pattern": {
+      "ndcg@1": 0.861,
+      "recall@1": 0.0703,
+      "ndcg@5": 0.7425,
+      "recall@5": 0.251,
+      "ndcg@10": 0.7182,
+      "recall@10": 0.4165,
+      "mrr": 0.9041,
+      "n_queries_ndcg": 41,
+      "n_queries_with_E": 41
+    }
+  },
+  "classification": {
+    "accuracy": 0.4773,
+    "macro_f1": 0.3743,
+    "f1_per_class": {
+      "E": 0.5686,
+      "S": 0.4443,
+      "C": 0.1559,
+      "I": 0.3282
+    },
+    "confusion_matrix": {
+      "labels": [
+        "E",
+        "S",
+        "C",
+        "I"
+      ],
+      "matrix": [
+        [
+          2703,
+          1203,
+          52,
+          314
+        ],
+        [
+          1703,
+          1608,
+          33,
+          429
+        ],
+        [
+          228,
+          102,
+          46,
+          58
+        ],
+        [
+          602,
+          553,
+          25,
+          484
+        ]
+      ]
+    }
+  }
+}

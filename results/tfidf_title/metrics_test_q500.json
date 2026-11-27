@@ -1,0 +1,74 @@
+{
+  "experiment": "tfidf_title",
+  "subset": "configs/subsets/test_q500.json",
+  "n_rows": 10143,
+  "n_queries": 500,
+  "ranking": {
+    "ndcg@1": 0.6326,
+    "recall@1": 0.1112,
+    "ndcg@5": 0.6437,
+    "recall@5": 0.4071,
+    "ndcg@10": 0.6923,
+    "recall@10": 0.6582,
+    "mrr": 0.7367,
+    "n_queries_ndcg": 500,
+    "n_queries_with_E": 500
+  },
+  "ranking_by_source": {
+    "behavioral": {
+      "ndcg@1": 0.5221,
+      "recall@1": 0.047,
+      "ndcg@5": 0.5893,
+      "recall@5": 0.223,
+      "ndcg@10": 0.587,
+      "recall@10": 0.3106,
+      "mrr": 0.6563,
+      "n_queries_ndcg": 14,
+      "n_queries_with_E": 14
+    },
+    "negations": {
+      "ndcg@1": 0.5739,
+      "recall@1": 0.1223,
+      "ndcg@5": 0.5419,
+      "recall@5": 0.336,
+      "ndcg@10": 0.5699,
+      "recall@10": 0.4891,
+      "mrr": 0.696,
+      "n_queries_ndcg": 38,
+      "n_queries_with_E": 38
+    },
+    "nlqec": {
+      "ndcg@1": 0.055,
+      "recall@1": 0.0,
+      "ndcg@5": 0.5327,
+      "recall@5": 0.3333,
+      "ndcg@10": 0.5227,
+      "recall@10": 0.3958,
+      "mrr": 0.4167,
+      "n_queries_ndcg": 2,
+      "n_queries_with_E": 2
+    },
+    "other": {
+      "ndcg@1": 0.6234,
+      "recall@1": 0.1173,
+      "ndcg@5": 0.6428,
+      "recall@5": 0.4343,
+      "ndcg@10": 0.7032,
+      "recall@10": 0.7083,
+      "mrr": 0.729,
+      "n_queries_ndcg": 405,
+      "n_queries_with_E": 405
+    },
+    "parse_pattern": {
+      "ndcg@1": 0.8439,
+      "recall@1": 0.0675,
+      "ndcg@5": 0.7713,
+      "recall@5": 0.2709,
+      "ndcg@10": 0.7425,
+      "recall@10": 0.4522,
+      "mrr": 0.8931,
+      "n_queries_ndcg": 41,
+      "n_queries_with_E": 41
+    }
+  }
+}

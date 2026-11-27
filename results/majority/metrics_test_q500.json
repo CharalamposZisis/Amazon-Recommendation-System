@@ -1,0 +1,118 @@
+{
+  "experiment": "majority",
+  "subset": "configs/subsets/test_q500.json",
+  "n_rows": 10143,
+  "n_queries": 500,
+  "ranking": {
+    "ndcg@1": 0.4397,
+    "recall@1": 0.0521,
+    "ndcg@5": 0.491,
+    "recall@5": 0.2854,
+    "ndcg@10": 0.5675,
+    "recall@10": 0.5615,
+    "mrr": 0.5806,
+    "n_queries_ndcg": 500,
+    "n_queries_with_E": 500
+  },
+  "ranking_by_source": {
+    "behavioral": {
+      "ndcg@1": 0.4,
+      "recall@1": 0.0125,
+      "ndcg@5": 0.4497,
+      "recall@5": 0.1426,
+      "ndcg@10": 0.5012,
+      "recall@10": 0.3327,
+      "mrr": 0.5083,
+      "n_queries_ndcg": 14,
+      "n_queries_with_E": 14
+    },
+    "negations": {
+      "ndcg@1": 0.3687,
+      "recall@1": 0.0501,
+      "ndcg@5": 0.3926,
+      "recall@5": 0.2343,
+      "ndcg@10": 0.4495,
+      "recall@10": 0.4247,
+      "mrr": 0.527,
+      "n_queries_ndcg": 38,
+      "n_queries_with_E": 38
+    },
+    "nlqec": {
+      "ndcg@1": 0.05,
+      "recall@1": 0.0,
+      "ndcg@5": 0.358,
+      "recall@5": 0.1875,
+      "ndcg@10": 0.4406,
+      "recall@10": 0.375,
+      "mrr": 0.35,
+      "n_queries_ndcg": 2,
+      "n_queries_with_E": 2
+    },
+    "other": {
+      "ndcg@1": 0.441,
+      "recall@1": 0.0561,
+      "ndcg@5": 0.4991,
+      "recall@5": 0.3076,
+      "ndcg@10": 0.5837,
+      "recall@10": 0.6074,
+      "mrr": 0.5815,
+      "n_queries_ndcg": 405,
+      "n_queries_with_E": 405
+    },
+    "parse_pattern": {
+      "ndcg@1": 0.5251,
+      "recall@1": 0.0307,
+      "ndcg@5": 0.5222,
+      "recall@5": 0.1666,
+      "ndcg@10": 0.5452,
+      "recall@10": 0.322,
+      "mrr": 0.6568,
+      "n_queries_ndcg": 41,
+      "n_queries_with_E": 41
+    }
+  },
+  "classification": {
+    "accuracy": 0.4212,
+    "macro_f1": 0.1482,
+    "f1_per_class": {
+      "E": 0.5927,
+      "S": 0.0,
+      "C": 0.0,
+      "I": 0.0
+    },
+    "confusion_matrix": {
+      "labels": [
+        "E",
+        "S",
+        "C",
+        "I"
+      ],
+      "matrix": [
+        [
+          4272,
+          0,
+          0,
+          0
+        ],
+        [
+          3773,
+          0,
+          0,
+          0
+        ],
+        [
+          434,
+          0,
+          0,
+          0
+        ],
+        [
+          1664,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  }
+}

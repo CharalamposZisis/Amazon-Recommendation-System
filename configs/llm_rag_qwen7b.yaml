@@ -1,0 +1,13 @@
+# LLM χωρίς εκπαίδευση (src/llm_rag.py). RAG: στοιχεία προϊόντος + 4 retrieved λυμένα παραδείγματα από το train.
+# GPU/Colab (T4). Αξιολόγηση στα σταθερά υποσύνολα (src/subsets.py).
+name: llm_rag_qwen7b
+model: Qwen/Qwen2.5-7B-Instruct
+load_in_4bit: true
+data_dir: data/processed/esci_small_us
+val_subset: configs/subsets/val_q150.json    # για calibration (μετατοπίσεις ανά κλάση)
+test_subset: configs/subsets/test_q500.json
+seed: 42
+k_examples: 4
+example_pool_queries: 3     # από πόσα παρόμοια train queries διαλέγονται τα παραδείγματα
+max_chars: {title: 200, bullets: 500, description: 300}
+batch_size: 8

@@ -1,0 +1,118 @@
+{
+  "experiment": "cross_encoder_minilm",
+  "subset": "configs/subsets/test_q500.json",
+  "n_rows": 10143,
+  "n_queries": 500,
+  "ranking": {
+    "ndcg@1": 0.7546,
+    "recall@1": 0.1374,
+    "ndcg@5": 0.7229,
+    "recall@5": 0.4589,
+    "ndcg@10": 0.7552,
+    "recall@10": 0.699,
+    "mrr": 0.825,
+    "n_queries_ndcg": 500,
+    "n_queries_with_E": 500
+  },
+  "ranking_by_source": {
+    "behavioral": {
+      "ndcg@1": 0.7221,
+      "recall@1": 0.0636,
+      "ndcg@5": 0.6438,
+      "recall@5": 0.2318,
+      "ndcg@10": 0.6417,
+      "recall@10": 0.3565,
+      "mrr": 0.7781,
+      "n_queries_ndcg": 14,
+      "n_queries_with_E": 14
+    },
+    "negations": {
+      "ndcg@1": 0.8237,
+      "recall@1": 0.1504,
+      "ndcg@5": 0.6704,
+      "recall@5": 0.3513,
+      "ndcg@10": 0.6764,
+      "recall@10": 0.5366,
+      "mrr": 0.8671,
+      "n_queries_ndcg": 38,
+      "n_queries_with_E": 38
+    },
+    "nlqec": {
+      "ndcg@1": 1.0,
+      "recall@1": 0.1458,
+      "ndcg@5": 0.8752,
+      "recall@5": 0.5625,
+      "ndcg@10": 0.9177,
+      "recall@10": 0.6667,
+      "mrr": 1.0,
+      "n_queries_ndcg": 2,
+      "n_queries_with_E": 2
+    },
+    "other": {
+      "ndcg@1": 0.7323,
+      "recall@1": 0.1446,
+      "ndcg@5": 0.7214,
+      "recall@5": 0.4931,
+      "ndcg@10": 0.7653,
+      "recall@10": 0.7512,
+      "mrr": 0.811,
+      "n_queries_ndcg": 405,
+      "n_queries_with_E": 405
+    },
+    "parse_pattern": {
+      "ndcg@1": 0.9098,
+      "recall@1": 0.0787,
+      "ndcg@5": 0.8065,
+      "recall@5": 0.293,
+      "ndcg@10": 0.7593,
+      "recall@10": 0.4532,
+      "mrr": 0.9313,
+      "n_queries_ndcg": 41,
+      "n_queries_with_E": 41
+    }
+  },
+  "classification": {
+    "accuracy": 0.5767,
+    "macro_f1": 0.5235,
+    "f1_per_class": {
+      "E": 0.6271,
+      "S": 0.5728,
+      "C": 0.3945,
+      "I": 0.4994
+    },
+    "confusion_matrix": {
+      "labels": [
+        "E",
+        "S",
+        "C",
+        "I"
+      ],
+      "matrix": [
+        [
+          2684,
+          1179,
+          77,
+          332
+        ],
+        [
+          1114,
+          2180,
+          70,
+          409
+        ],
+        [
+          135,
+          63,
+          159,
+          77
+        ],
+        [
+          355,
+          417,
+          66,
+          826
+        ]
+      ]
+    }
+  }
+}

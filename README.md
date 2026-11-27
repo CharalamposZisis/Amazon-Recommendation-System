@@ -132,6 +132,15 @@ done
 - `src/cross_encoder.py`: fine-tuned cross-encoder για E/S/C/I (`cross_encoder_minilm`). Επιλογή epoch με
   macro-F1 στο val· ranking score = expected gain.
 
+- `src/llm_rag.py`: **LLM + RAG** χωρίς εκπαίδευση (Qwen 2.5 7B, 4-bit). Το prompt έχει τους ορισμούς E/S/C/I,
+  τα στοιχεία του προϊόντος και k λυμένα παραδείγματα από το train (retrieval με BM25 στα queries και TF-IDF στους
+  τίτλους). Με `k_examples: 0` γίνεται zero-shot (ablation). Η ετικέτα βγαίνει από την πιθανότητα του επόμενου token
+  για E/S/C/I. Η εκδοχή `_calibrated` προσθέτει μετατοπίσεις ανά κλάση, που επιλέγονται στο val.
+  Notebook: `notebooks/colab_02_llm_rag.ipynb`.
+- **Σταθερά υποσύνολα** (`src/subsets.py`): τα LLMs αξιολογούνται σε 500 queries του test (`configs/subsets/test_q500.json`,
+  seed 42) και 150 του val. Όλα τα άλλα μοντέλα ξαναβαθμολογούνται στο ίδιο υποσύνολο από τα predictions τους:
+  `python -m src.report --split test --subset configs/subsets/test_q500.json` → `results/summary_test_q500.csv`.
+
 Ροή: Colab → **File → Upload notebook** → `notebooks/colab_01_dense_cross_encoder.ipynb` → Runtime: **T4 GPU** →
 **Run all**. Το notebook κατεβάζει τον κώδικα (GitHub) και το ESCI, ξαναφτιάχνει τα ίδια splits (με έλεγχο ότι
 βγαίνουν ίδια) και στο τέλος κατεβάζει το `results_colab01.zip` με τα metrics.
@@ -142,7 +151,7 @@ done
 ## Δομή
 
 ```
-src/        κώδικας (data.py, eda.py, meta.py, category_subset.py, evaluate.py, baselines.py, classifiers.py, dense.py, cross_encoder.py, report.py)
+src/        κώδικας (data.py, eda.py, meta.py, category_subset.py, evaluate.py, baselines.py, classifiers.py, dense.py, cross_encoder.py, llm_rag.py, subsets.py, report.py)
 configs/    ένα yaml ανά πείραμα
 notebooks/  EDA και παρουσίαση αποτελεσμάτων
 results/    metrics και γραφήματα
