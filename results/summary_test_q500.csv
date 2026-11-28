@@ -1,4 +1,6 @@
 experiment,ndcg@10,ndcg@5,mrr,recall@5,recall@10,accuracy,macro_f1
+llm_zeroshot_qwen7b_calibrated,0.7636,0.7273,0.8176,0.4621,0.7165,0.4805,0.3948
+llm_zeroshot_qwen7b,0.7619,0.7257,0.8153,0.4638,0.7143,0.472,0.3521
 cross_encoder_minilm,0.7552,0.7229,0.825,0.4589,0.699,0.5767,0.5235
 llm_rag_qwen7b,0.7434,0.6999,0.7886,0.4409,0.6992,0.442,0.3555
 llm_rag_qwen7b_calibrated,0.7429,0.6999,0.7932,0.4378,0.6956,0.462,0.3973

@@ -1,0 +1,124 @@
+{
+  "experiment": "llm_zeroshot_qwen7b_calibrated",
+  "subset": "configs/subsets/test_q500.json",
+  "offsets": {
+    "E": 0.0,
+    "S": 2.75,
+    "C": 4.0,
+    "I": -2.75
+  },
+  "n_rows": 10143,
+  "n_queries": 500,
+  "ranking": {
+    "ndcg@1": 0.737,
+    "recall@1": 0.1353,
+    "ndcg@5": 0.7273,
+    "recall@5": 0.4621,
+    "ndcg@10": 0.7636,
+    "recall@10": 0.7165,
+    "mrr": 0.8176,
+    "n_queries_ndcg": 500,
+    "n_queries_with_E": 500
+  },
+  "ranking_by_source": {
+    "behavioral": {
+      "ndcg@1": 0.7286,
+      "recall@1": 0.0541,
+      "ndcg@5": 0.6479,
+      "recall@5": 0.196,
+      "ndcg@10": 0.655,
+      "recall@10": 0.3501,
+      "mrr": 0.7701,
+      "n_queries_ndcg": 14,
+      "n_queries_with_E": 14
+    },
+    "negations": {
+      "ndcg@1": 0.7029,
+      "recall@1": 0.1349,
+      "ndcg@5": 0.6446,
+      "recall@5": 0.3619,
+      "ndcg@10": 0.6638,
+      "recall@10": 0.553,
+      "mrr": 0.8057,
+      "n_queries_ndcg": 38,
+      "n_queries_with_E": 38
+    },
+    "nlqec": {
+      "ndcg@1": 1.0,
+      "recall@1": 0.1458,
+      "ndcg@5": 0.8197,
+      "recall@5": 0.3542,
+      "ndcg@10": 0.7614,
+      "recall@10": 0.4167,
+      "mrr": 1.0,
+      "n_queries_ndcg": 2,
+      "n_queries_with_E": 2
+    },
+    "other": {
+      "ndcg@1": 0.7306,
+      "recall@1": 0.1445,
+      "ndcg@5": 0.7315,
+      "recall@5": 0.4997,
+      "ndcg@10": 0.7771,
+      "recall@10": 0.7705,
+      "mrr": 0.8119,
+      "n_queries_ndcg": 405,
+      "n_queries_with_E": 405
+    },
+    "parse_pattern": {
+      "ndcg@1": 0.822,
+      "recall@1": 0.0717,
+      "ndcg@5": 0.7853,
+      "recall@5": 0.28,
+      "ndcg@10": 0.7597,
+      "recall@10": 0.4751,
+      "mrr": 0.8923,
+      "n_queries_ndcg": 41,
+      "n_queries_with_E": 41
+    }
+  },
+  "classification": {
+    "accuracy": 0.4805,
+    "macro_f1": 0.3948,
+    "f1_per_class": {
+      "E": 0.6088,
+      "S": 0.3459,
+      "C": 0.1468,
+      "I": 0.4777
+    },
+    "confusion_matrix": {
+      "labels": [
+        "E",
+        "S",
+        "C",
+        "I"
+      ],
+      "matrix": [
+        [
+          2706,
+          853,
+          139,
+          574
+        ],
+        [
+          1576,
+          1047,
+          174,
+          976
+        ],
+        [
+          109,
+          118,
+          69,
+          138
+        ],
+        [
+          226,
+          262,
+          124,
+          1052
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+<|im_start|>system
+You are an expert annotator of Amazon product search relevance.<|im_end|>
+<|im_start|>user
+Classify how well the product matches the shopping query, using exactly one label:
+E (Exact): the product is relevant for the query and satisfies all the query specifications.
+S (Substitute): the product is somewhat relevant; it fails some aspects of the query but can be used as a functional substitute.
+C (Complement): the product does not fulfil the query, but it could be used in combination with an exact item.
+I (Irrelevant): the product is irrelevant to the query or fails a central aspect of it.
+
+Query: - wash non-chlorine bleach. tumble dry low. do not iron.
+Product:
+Title: SHU UFANRO Pee Pads for Dog 65"x48"/72"x72" Washable Reusable Dog Pads Non-Slip Puppy Pad Extra Large Heavy Absorbency Puppy Pee Pads Quick Dry Whelping Pads for Dogs Waterproof for Dog Playpen/Crate
+Brand: SHU UFANRO
+Color: Grey
+Bullet points: FAST ABSORPTION & LEAKPROOF: 4 thickened layers prevent urine outflow and dry faster. The super absorbent top layer can quickly absorb urine and odor within 2-3 minutes. Our whelping pads can effectively prevent urine from leaking to the floor, no leakage and no smell, keep puppies and floor clean and dry. Anti-Slip Bottom & Soft Material： There are a lot of non-slip silicone gels on the bottom of the puppy playpen pad. The non-slip, leak-proof backing can effectively prevent the dog pen mat fro
+Description: Our Anti-Slip Washable dog pads have 2 sizes : 65"x 48" (grey colour) 72" x 72" (grey colour) Package 1 pad in each package Material： The dog pee pad is made of 4 layers: 1.Polar Fleece（Fast Absorbent） 2.high density inner layer 3.TPU waterproof membrane and non-slip rubbe 4.The extra large pee pad 
+
+Answer with a single letter: E, S, C or I.<|im_end|>
+<|im_start|>assistant
+
+
+=====
+
+<|im_start|>system
+You are an expert annotator of Amazon product search relevance.<|im_end|>
+<|im_start|>user
+Classify how well the product matches the shopping query, using exactly one label:
+E (Exact): the product is relevant for the query and satisfies all the query specifications.
+S (Substitute): the product is somewhat relevant; it fails some aspects of the query but can be used as a functional substitute.
+C (Complement): the product does not fulfil the query, but it could be used in combination with an exact item.
+I (Irrelevant): the product is irrelevant to the query or fails a central aspect of it.
+
+Query: - wash non-chlorine bleach. tumble dry low. do not iron.
+Product:
+Title: NTBAY Acrylic Knitted Throw Blanket, Lightweight and Soft Cozy Decorative Woven Blanket with Tassels for Travel, Couch, Bed, Sofa, 51 x 67 Inches, Mustard Yellow Wave
+Brand: NTBAY
+Color: Mustard Yellow Wave
+Bullet points: PACKAGE INCLUDE: 1 x Blanket (51 x 67 inches with 7 inches tassel) PRODUCT FEATURES: Our comfortable blankets are made of acrylic fabric, which has greater flexibility and strength than wool. This light acrylic blanket is ultra-soft, fluffy and strong resistance to sunlight. This knitted blanket with special tassel design on both sides adds to the beauty of the product. PRODUCT FUNCTION: The durable blanket is designed to be used all year round. It can keep warm well when used in winter or cold 
+Description: Specification: Acrylic Package Included: 1 x Blanket (51 x 67 inches with 7 inches tassel). Product Benefits: Our comfortable blankets are made of acrylic fabric, which has greater flexibility and strength than wool. This light acrylic blanket is ultra-soft, fluffy and strong resistance to sunlight.
+
+Answer with a single letter: E, S, C or I.<|im_end|>
+<|im_start|>assistant
+
+
+=====
+
+<|im_start|>system
+You are an expert annotator of Amazon product search relevance.<|im_end|>
+<|im_start|>user
+Classify how well the product matches the shopping query, using exactly one label:
+E (Exact): the product is relevant for the query and satisfies all the query specifications.
+S (Substitute): the product is somewhat relevant; it fails some aspects of the query but can be used as a functional substitute.
+C (Complement): the product does not fulfil the query, but it could be used in combination with an exact item.
+I (Irrelevant): the product is irrelevant to the query or fails a central aspect of it.
+
+Query: - wash non-chlorine bleach. tumble dry low. do not iron.
+Product:
+Title: Kluein Pet Playpen Mat 48x65 XXL Washable Puppy Pad Dog Pen Mat Soft Fleece Top Waterproof Non-Slip Dog Mat for; Dog playpen, Whelping Box, Kennel, Potty Training, Travel, Dog, Cat, Bunny, Guinea Pig
+Brand: Kluein Pet
+Color: Grey
+Bullet points: &#9989 ABSORBENT & SOFT- Quickly absorbs and disperses urine and fluids thru fabric to reduce tracking and control odors. Protects and keeps floors, furniture, bedding, car seats and pets clean and dry. Fluffier and softer! Just compare to competitors’ pads. Neutral grey color goes with any decor &#9989 ECO-VALUE & EASY CARE - Easy to wash and quick drying fabric saves time. Use washing machine and dryer or hang dry. Reusable up to 300 times saving &#128178 1000’s and much waste compared to disp
+Description: &#128054 WHY PURCHASE THIS PRODUCT? At Kluein Pet ™ our goals are to; provide great quality pet products at a practical price give back to our communities by helping our four-legged friends &#128021 that are less fortunate. This is why we donate a portion of all proceeds from sales to reputable anim
+
+Answer with a single letter: E, S, C or I.<|im_end|>
+<|im_start|>assistant

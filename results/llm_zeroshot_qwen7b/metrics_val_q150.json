@@ -1,0 +1,124 @@
+{
+  "experiment": "llm_zeroshot_qwen7b",
+  "subset": "configs/subsets/val_q150.json",
+  "offsets": {
+    "E": 0.0,
+    "S": 0.0,
+    "C": 0.0,
+    "I": 0.0
+  },
+  "n_rows": 3104,
+  "n_queries": 150,
+  "ranking": {
+    "ndcg@1": 0.693,
+    "recall@1": 0.1181,
+    "ndcg@5": 0.6828,
+    "recall@5": 0.4203,
+    "ndcg@10": 0.7366,
+    "recall@10": 0.7024,
+    "mrr": 0.7702,
+    "n_queries_ndcg": 150,
+    "n_queries_with_E": 150
+  },
+  "ranking_by_source": {
+    "behavioral": {
+      "ndcg@1": 0.5857,
+      "recall@1": 0.067,
+      "ndcg@5": 0.7189,
+      "recall@5": 0.3524,
+      "ndcg@10": 0.6981,
+      "recall@10": 0.493,
+      "mrr": 0.6943,
+      "n_queries_ndcg": 7,
+      "n_queries_with_E": 7
+    },
+    "negations": {
+      "ndcg@1": 0.7583,
+      "recall@1": 0.1067,
+      "ndcg@5": 0.6115,
+      "recall@5": 0.244,
+      "ndcg@10": 0.6372,
+      "recall@10": 0.4852,
+      "mrr": 0.8028,
+      "n_queries_ndcg": 12,
+      "n_queries_with_E": 12
+    },
+    "nlqec": {
+      "ndcg@1": 0.0,
+      "recall@1": 0.0,
+      "ndcg@5": 0.5,
+      "recall@5": 1.0,
+      "ndcg@10": 0.5,
+      "recall@10": 1.0,
+      "mrr": 0.3333,
+      "n_queries_ndcg": 1,
+      "n_queries_with_E": 1
+    },
+    "other": {
+      "ndcg@1": 0.6988,
+      "recall@1": 0.1273,
+      "ndcg@5": 0.69,
+      "recall@5": 0.4507,
+      "ndcg@10": 0.7555,
+      "recall@10": 0.7561,
+      "mrr": 0.7754,
+      "n_queries_ndcg": 121,
+      "n_queries_with_E": 121
+    },
+    "parse_pattern": {
+      "ndcg@1": 0.6889,
+      "recall@1": 0.0615,
+      "ndcg@5": 0.6738,
+      "recall@5": 0.234,
+      "ndcg@10": 0.6709,
+      "recall@10": 0.3991,
+      "mrr": 0.7639,
+      "n_queries_ndcg": 9,
+      "n_queries_with_E": 9
+    }
+  },
+  "classification": {
+    "accuracy": 0.4807,
+    "macro_f1": 0.338,
+    "f1_per_class": {
+      "E": 0.6436,
+      "S": 0.1984,
+      "C": 0.0317,
+      "I": 0.4784
+    },
+    "confusion_matrix": {
+      "labels": [
+        "E",
+        "S",
+        "C",
+        "I"
+      ],
+      "matrix": [
+        [
+          929,
+          136,
+          5,
+          275
+        ],
+        [
+          441,
+          134,
+          6,
+          399
+        ],
+        [
+          68,
+          27,
+          3,
+          76
+        ],
+        [
+          104,
+          74,
+          1,
+          426
+        ]
+      ]
+    }
+  }
+}
