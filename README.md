@@ -141,6 +141,11 @@ done
   seed 42) και 150 του val. Όλα τα άλλα μοντέλα ξαναβαθμολογούνται στο ίδιο υποσύνολο από τα predictions τους:
   `python -m src.report --split test --subset configs/subsets/test_q500.json` → `results/summary_test_q500.csv`.
 
+- **Στατιστική σημαντικότητα** (`src/significance.py`): paired bootstrap (10.000 δείγματα queries) στη διαφορά δύο
+  μοντέλων σε nDCG@10 ανά query, με 95% CI και p-value:
+  `python -m src.significance --split test --subset configs/subsets/test_q500.json --pairs llm_zeroshot_qwen7b:cross_encoder_minilm`
+  → `results/significance_test_q500.csv`. Χρειάζεται τα predictions των μοντέλων τοπικά.
+
 Ροή: Colab → **File → Upload notebook** → `notebooks/colab_01_dense_cross_encoder.ipynb` → Runtime: **T4 GPU** →
 **Run all**. Το notebook κατεβάζει τον κώδικα (GitHub) και το ESCI, ξαναφτιάχνει τα ίδια splits (με έλεγχο ότι
 βγαίνουν ίδια) και στο τέλος κατεβάζει το `results_colab01.zip` με τα metrics.
@@ -151,7 +156,7 @@ done
 ## Δομή
 
 ```
-src/        κώδικας (data.py, eda.py, meta.py, category_subset.py, evaluate.py, baselines.py, classifiers.py, dense.py, cross_encoder.py, llm_rag.py, subsets.py, report.py)
+src/        κώδικας (data.py, eda.py, meta.py, category_subset.py, evaluate.py, baselines.py, classifiers.py, dense.py, cross_encoder.py, llm_rag.py, subsets.py, report.py, significance.py)
 configs/    ένα yaml ανά πείραμα
 notebooks/  EDA και παρουσίαση αποτελεσμάτων
 results/    metrics και γραφήματα
